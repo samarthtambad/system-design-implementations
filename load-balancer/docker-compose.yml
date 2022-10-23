@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  backend-server-1:
+    image: nginxdemos/hello:latest
+    restart: always
+    ports:
+      - '9090:80'
+
+  backend-server-2:
+    image: nginxdemos/hello:latest
+    restart: always
+    ports:
+      - '9091:80'
+
+  backend-server-3:
+    image: nginxdemos/hello:latest
+    restart: always
+    ports:
+      - '9092:80'
+
+  backend-server-4:
+    image: nginxdemos/hello:latest
+    restart: always
+    ports:
+      - '9093:80'
+
